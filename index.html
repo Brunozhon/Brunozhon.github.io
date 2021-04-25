@@ -26,6 +26,9 @@
   <li>
     <button class="nav-link" id="links-tab" data-bs-toggle="tab" data-bs-target="#links" type="button" role="tab" aria-controls="links" aria-selected="false">Links</button>
   </li>
+  <li>
+    <button class="nav-link" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab" aria-controls="links" aria-selected="false"></button>
+  </li>
 </ul>
     
     <!-- Content -->
@@ -38,10 +41,35 @@
     <div><img src="https://brunozhon.github.io/image.jpg" alt="Photo about me" width="400" /></div>
     <p>This is me when I was 7.</p>
   </div>
-  <div class="tab-pand fade" id="links">
+  <div class="tab-pane fade" id="links">
     <ul>
       <li><a href="https://brunozhon.github.io/games/" target="_blank">Bruno Games</a></li>
     </ul>
+  </div>
+  <div class="tab-pane fade" id="learn">
+    
+    <!-- Learn sections -->
+    
+    <div class="d-flex align-items-start">
+  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button class="nav-link active" id="v-pills-start-tab" data-bs-toggle="pill" data-bs-target="#v-pills-start" type="button" role="tab" aria-controls="v-pills-start" aria-selected="true">Start</button>
+    <button class="nav-link" id="v-pills-html-tab" data-bs-toggle="pill" data-bs-target="#v-pills-html" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Learn HTML</button>
+    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Coming soon...</button>
+    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Coming soon...</button>
+  </div>
+      
+      <!-- Learn content -->
+      
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-start" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      <p>Welcome to the learning center! Select a button to start!</p>
+    </div>
+    <div class="tab-pane fade" id="v-pills-html" role="tabpanel" aria-labelledby="v-pills-html-tab">Coming soon...
+    </div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+  </div>
+</div>
   </div>
 </div>
     
