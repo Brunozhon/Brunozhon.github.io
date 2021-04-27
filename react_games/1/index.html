@@ -10,24 +10,44 @@
     </div>
     <script type="text/babel">
       // Widget
-      class Widget extends React.Component {
+      class App extends React.Component {
         constructor(props) {
           super(props);
-          this.state = {money: 50, resources: 50, people: 50, happiness: 50};
+          this.state = {
+            stats: {
+              money: 50,
+              resources: 50, 
+              people: 50,
+              happiness: 50,
+              questnum: 0
+            }
+            quests: [
+              {
+                question: "Would you like to get some ducks here?"
+                choices: ["Yes", "No"]
+              }
+            ]
+          };
         }
         render() {
           return (
             <div>
-              <p>Money: ${this.state.money}</p>
-              <p>Resources: {this.state.resources}</p>
-              <p>People: {this.state.people}</p>
-              <p>Happiness: {this.state.happiness}%</p>
+              <div>
+                <p>Money: ${this.state.stats.money}</p>
+                <p>Resources: {this.state.stats.resources}</p>
+                <p>People: {this.state.stats.people}</p>
+                <p>Happiness: {this.state.stats.happiness}%</p>
+              </div>
+              <div>
+                <p>{this.state.quests[this.state.questnum].question}</p>
+                <p><button>Yes</button> -or- <button>No</button></p>
+              </div>
             </div>
           );
         }
       }
       // Render
-      ReactDOM.render(<Widget />, document.getElementById("root"));
+      ReactDOM.render(<App />, document.getElementById("root"));
     </script>
   </body>
 </html>
