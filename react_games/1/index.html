@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Kingdom</title>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script type="text/babel">
+      // Widget
+      class Widget extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {money: 50, resources: 50, people: 50, happiness: 50};
+        }
+        render() {
+          return (
+            <div>
+              <p>Money: ${this.state.money}</p>
+              <p>Resources: {this.state.resources}</p>
+              <p>People: {this.state.people}</p>
+              <p>Happiness: {this.state.happiness}%</p>
+            </div>
+          );
+        }
+      }
+      // Render
+      ReactDOM.render(<Widget />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
