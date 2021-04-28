@@ -31,6 +31,7 @@
       "whitest",
       "wow"
     ],
+    "soldout":false,
     "price": "$599.99"
   }
 ]
