@@ -1,0 +1,36 @@
+[
+  {
+    "product":"RGB LED Chair 25in by 18in by 18in - 1500 Watts per hour",
+    "tags": [
+      "chair",
+      "led chair",
+      "cool chair",
+      "awesome chair",
+      "needs power",
+      "wow",
+      "crikey"
+    ],
+    "soldout":true,
+    "price":"$1999.99"
+  },
+  {
+    "product":"10-level encryption system safe - The safest safe in the world - Titanium walls",
+    "tags": [
+      "safe",
+      "strong safe",
+      "wow",
+      "crikey"
+    ],
+    "soldout":false,
+    "price":"$999,999.99"
+  },
+  {
+    "product":"Titainum dioxide whiteout - The whitest whiteout",
+    "tags": [
+      "most white",
+      "whitest",
+      "wow"
+    ],
+    "price": "$599.99"
+  }
+]
