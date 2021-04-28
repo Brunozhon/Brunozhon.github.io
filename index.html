@@ -157,7 +157,7 @@
 </div>
   <script>
     $.getJSON("https://brunozhon.github.io/shop.json", function(response) {
-      var resp = "";
+      var resp = "<h1>Our shop sorted by 'cool items'</h1>";
       for (var i=0; i<response.length; i+=1) {
         resp += "<h2>" + response[i].product + "</h2><p> Tags:";
         for (var j=0; j<response[i].tags.length; i+=1) {
@@ -168,7 +168,7 @@
           resp += "<p style='color: red'>Sold out!</p>"
         }
       }
-      document.getElementById("#l-api").innerHTML = resp;
+      document.getElementById("l-api").innerHTML = resp;
     });
   </script>
    
