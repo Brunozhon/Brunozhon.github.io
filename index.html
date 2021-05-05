@@ -158,12 +158,12 @@
   <script>
     $.getJSON("https://brunozhon.github.io/shop.json", function(response) {
       var resp = "<h1>Our shop sorted by 'cool items'</h1>";
-      for (var i=0; i<response.length; i+=1) {
-        resp += "<h2>" + response[i].product + "</h2><p> Tags:";
-        for (var j=0; j<response[i].tags.length; i+=1) {
-          resp += "<button>" + response[i].tags[j] + "</button>";
+      for (var i=0; i<this.response.length; i+=1) {
+        resp += "<h2>" + this.response[i].product + "</h2><p> Tags:";
+        for (var j=0; j<this.response[i].tags.length; i+=1) {
+          resp += "<button>" + this.response[i].tags[j] + "</button>";
         }
-        resp += "</p><p>Price: " + response[i].price + "</p>";
+        resp += "</p><p>Price: " + this.response[i].price + "</p>";
         if (response[i].soldout) {
           resp += "<p style='color: red'>Sold out!</p>"
         }
