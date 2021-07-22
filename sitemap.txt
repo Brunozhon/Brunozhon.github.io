@@ -1,6 +1,2 @@
 https://brunozhon.github.io
-https://brunozhon.github.io/api/
-https://brunozhon.github.io/rest-api/
-https://brunozhon.github.io/ex-brunozhon/
-https://brunozhon.github.io/bQuery/bQuery.js
 https://brunozhon.github.io/games/
