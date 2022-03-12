@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Bruno Zhong's webpage</title>
+    <title>Bruno Zhong's Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -9,169 +9,21 @@
     <meta name="description" content="About Bruno Zhong">
     <meta name="keywords" content="Bruno Zhong, About Bruno Zhong, Bruno, Bruno Z">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    
-    <h1>Bruno Zhong's website</h1>
-    
-    <!-- Tabs -->
-    
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#intro" type="button" role="tab" aria-controls="home" aria-selected="true">About me</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Image of me</button>
-  </li>
-  <li>
-    <button class="nav-link" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab" aria-controls="links" aria-selected="false">Learn</button>
-  </li>
-</ul>
-    
-    <!-- Content -->
-    
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="about-tab">
-    <p>Hello, my name is Bruno Zhong. I am 8 years old. I speak English and Chinese.</p>
-    <p>I recently added some "business card"-like things but I can't think of a name. You can suggest one in <a href="https://github.com/Brunozhon/Brunozhon.github.io/discussions/101#discussion-3733336">GitHub Discussions</a> (don't forget to sign in!)</p>
-    <p>Also, I added a clock. I'll be back with the clock in a tick-tock!</p>
-    <iframe src="https://brunozhon.github.io/clock/" width="200" height="200"></iframe>
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <div><img src="https://brunozhon.github.io/image.jpg" alt="Photo about me" width="400" /></div>
-    <p>This is me when I was 7.</p>
-  </div>
-  <div class="tab-pane fade" id="learn">
-    
-    <!-- Learn sections -->
-    
-    <div class="d-flex align-items-start">
-  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link active" id="v-pills-start-tab" data-bs-toggle="pill" data-bs-target="#v-pills-start" type="button" role="tab" aria-controls="v-pills-start" aria-selected="true">Start</button>
-    <button class="nav-link" id="v-pills-html-tab" data-bs-toggle="pill" data-bs-target="#v-pills-html" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Learn HTML</button>
-    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Coming soon...</button>
-    <button class="nav-link" id="v-pills-js-tab" data-bs-toggle="pill" data-bs-target="#v-pills-js" type="button" role="tab" aria-controls="v-pills-js" aria-selected="false">JavaScript</button>
-  </div>
-      
-      <!-- Learn content -->
-      
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-start" role="tabpanel" aria-labelledby="v-pills-home-tab">
-      <p>Welcome to the learning center! Select a button to start!</p>
-    </div>
-    <div class="tab-pane fade" id="v-pills-html" role="tabpanel" aria-labelledby="v-pills-html-tab">
-      <p>HTML is one of the programming languages used for web development. It is used to display <a href="https://brunozhon.github.io">my website</a>. Let's start learning HTML!</p>
-      <p>The first things to put in the document are <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, and<code>&lt;body&gt;</code>. Let's start coding! Name your file <code>index.html</code> and copy this code:</p>
-      <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;body&gt;
-    &lt;p&gt;Hello world!&lt;p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-      </pre>
-      <p>This will display:</p>
-      <div class="card">
-        <div class="card-body">
-          <p>Hello world!</p>
-        </div>
-      </div>
-      <div class="alert alert-info" role="alert">
-        <b>Note:</b> We used <a href="https://getbootstrap.com">Bootstrap</a> to style our text. It also styles the results. If you want to style your pages, check out the <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap documatation</a> when you have mastered HTML and maybe CSS or JavaScript!
-      </div>
-      <p>I suggest you to add a title. Where do you add a title? Check it out! (I will highlight added code in green and deleted code in red.)</p>
-      <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-<span style="color: #00FF00">  &lt;head&gt;</span>
-<span style="color: #00FF00">    &lt;title&gt;Hello world!&lt;/title&gt;</span>
-<span style="color: #00FF00">  &lt;/head&gt;</span>
-  &lt;body&gt;
-    &lt;p&gt;Hello world!&lt;p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-      </pre>
-      <p>The result will be the same but there will be a title (if you view in in a browser).</p>
-      <p>Now we'll make a nifty little website on GitHub! The first step is to sign in. Go to <a href="https://github.com">github.com</a> and click "Sign up." Enter your username, email, and password</p>
-      <img src="sign_in_1.png" width="500" />
-      <p>Click the "Verify" button solve the OctoCaptha (yes, it is OctoCaptha) and click "Create account."</p>
-      <img src="sign_in_2.png" width="500" />
-      <p>Now GitHub needs to verify you email. GitHub should've sent you an email with a link in it. Go to your mail provider. If you don't see it, look at <a href="https://docs.github.com/en/github/getting-started-with-github/verifying-your-email-address#verifying-your-email-address">the GitHub documatation</a>. Once you recive it, click that link. Now you're ready to create a repository.</p>
-      <p>Go to <a href="https://github.com/Brunozhon/HTMLsample">Brunozhon/HTMLsample</a>. Click "Use this template." Name your repository <code>username.github.io</code>, where <code>username</code> is your GitHub username.</p>
-      <p>Edit your file and follow the directions shown on the file. Let's add some more features!</p>
-      <hr />
-      <p>Did you see that thing above? It is a horizontal rule. Add it on the bottom of line 17.</p>
-      <pre>
-17    &lt;p&gt;Here are more of my projects. You can see my projects at &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;! ...&lt;/p&gt;
-<span style="color: #00FF00">18    &lt;hr /&gt;</span>
-19  &lt;/body&gt;
-      </pre>
-      <p>We are also going to learn about the line break. Although we're not going to add it, it is a important element to learn. It looks like this: <code>&lt;br /&gt;</code>.</p>
-      <p>Here is a thing to help you better understand it.</p>
-      <div class="card">
-        <div class="card-body">
-          <span style="background: red; color: white;">This text is on the top of the line break.</span>
-          <br /> <!-- The line break is here!!! -->
-          <span style="background: red; color: white;">This text is on the bottom of the line break.</span>
-        </div>
-      </div>
-      <p>Here is the source code:</p>
-      <pre>
-&lt;span style="background: red; color: white;"&gt;This text is on the top of the line break.&lt;/span&gt;
-&lt;br /&gt;
-&lt;span style="background: red; color: white;"&gt;This text is on the bottom of the line break.&lt;/span&gt;
-      </pre>
-      <hr />
-      <p>We'll be learning about container. "So what is a container?" you ask. A container is anything that is a block element. "So what is a block element?" you ask again. Well, I will tell you... <i>using CSS.</i></p>
-      <div class="card">
-        <div class="card-body">
-          <div style="color: red">This is a block element. There is no &lt;br /&gt; between this element...</div>
-          <div style="color: #FF00FF">...and this element.</div>
-          <hr />
-          <span style="color: green">This is a inline element. If I don't add a &lt;br /&gt; element,</span>
-          <span style="color: #00FF00">these spans will go together like buddies or friends.</span>
-          <br />
-          <span style="color: yellow">It's the &lt;br /&gt; that separated me from the others. The &lt;br /&gt; is important!!!</span>
-        </div>
-      </div>
-      <p>But if you want to add more content to your website, you can use headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>), paragraphs (<code>&lt;p&gt;</code>), and things you've learned. Add this code to <code>index.html</code></p>
-      <pre>
-18     &lt;hr /&gt;
-<span style="color: green">19    &lt;h1&gt;This is more&lt;/h1&gt;</span>
-<span style="color: green">20    &lt;p&gt;Hello world!&lt;/p&gt;</span>
-21   &lt;/body&gt;
-      </pre>
-    </div>
-    <p>You can change the content if you want.<p>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-    <div class="tab-pane fade" id="v-pills-js" role="tabpanel" aria-labelledby="v-pills-js-tab">
-      <p>JavaScript is awesome! Without JavaScript, you couldn't change HTML and CSS props after they're set. You can't make this little API withould JavaScript, but you can't be curious yet.</p>
-      <div id="l-api">
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-  <script>
-    $.getJSON("https://brunozhon.github.io/shop.json", function(response) {
-      var resp = "<h1>Our shop sorted by 'cool items'</h1>";
-      for (var i=0; i<this.response.length; i+=1) {
-        resp += "<h2>" + this.response[i].product + "</h2><p> Tags:";
-        for (var j=0; j<this.response[i].tags.length; i+=1) {
-          resp += "<button>" + this.response[i].tags[j] + "</button>";
-        }
-        resp += "</p><p>Price: " + this.response[i].price + "</p>";
-        if (response[i].soldout) {
-          resp += "<p style='color: red'>Sold out!</p>"
-        }
+    <style>
+      /* Add scrollspy */
+      body {
+        position: relative;
       }
-      document.getElementById("l-api").innerHTML = resp;
-    });
-  </script>
-   
-    
-        
-     
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <nav id="navbar-example" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+      <a class="navbar-brand" href="#">Bruno Zhong's Website</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#about-me-7213">About Me</a>
+      </nav>
+    </nav>
+    <h2 id="about-me-7213">About Me</h2>
+    <p>Hi! My name is Bruno Zhong. I am 8 years old. I know four languages: HTML, CSS, JavaScript, and Swift.</p>
   </body>
 </html>
