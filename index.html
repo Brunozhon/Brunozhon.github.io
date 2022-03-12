@@ -17,15 +17,48 @@
     </style>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 sticky-top">
+    <nav id="navbar-example" class="navbar navbar-light bg-light px-3 sticky-top">
       <h1><a class="navbar-brand" href="#">Bruno Zhong's Website</a></h1>
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link" href="#about-me-7213">About Me</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#russia-vs-ukraine-2942">Russia vs. Ukraine</a>
+        </li>
       </ul>
     </nav>
     <h2 id="about-me-7213">About Me</h2>
     <p>Hi! My name is Bruno Zhong. I am 8 years old. I know four languages: HTML, CSS, JavaScript, and Swift.</p>
+    <h2 id="russia-vs-ukraine-2942">Russia vs. Ukraine</h2>
+    <p>Currently, a battle is happening between Russia and Ukraine.</p>
+    <div class="alert alert-warning" role="alert">
+      This section has a PG rating. Anyone scared of watching PG-rated movies should skip this section.
+    </div>
+    <p>Who do you support?</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Russia
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        Ukraine
+      </label>
+    </div>
+    <div class="alert alert-info" role="alert">
+      As a sidenote, supporters of Ukraine can use this instead for people who support Russia:
+      <form>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="ukrainecheck" required>
+          <label class="form-check-label" for="ukrainecheck">
+            I do agree that I support Ukraine, and not Russia.
+          </label>
+        </div>
+        <button type="submit">Submit Vote</button>
+      </form>
+    </div>
   </body>
 </html>
