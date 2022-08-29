@@ -1,2 +1,2 @@
 https://brunozhon.github.io
-https://brunozhon.github.io/keynote-archive/
+https://brunozhon.github.io/javascript-tutorials/
