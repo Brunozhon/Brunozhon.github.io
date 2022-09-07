@@ -49,12 +49,6 @@
       </ul>
     </nav>
     <pre>
-|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
-| WELCOME TO MY WEBSITE! |
-|________________________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 づ
     </pre>
     <h2 id="about-me-7213">About Me</h2>
     <p>Hi! My name is Bruno Zhong. I am 9 years old. I know four languages: HTML, CSS, JavaScript, and Swift.</p>
@@ -147,5 +141,36 @@
     <ul>
       <li><a href="https://brunozhon.github.io/javascript-tutorials/">JavaScript Tutorials</a></li>
     </ul>
+    <script>
+      var asciiArt = [
+        `|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| WELCOME TO MY WEBSITE! |
+|________________________|
+(\__/) || 
+(•ㅅ•) || 
+/ 　 づ`,
+        `Welcome to — oops, sorry…
+
+(•_•)
+
+( •_•)>⌐■-■
+
+(⌐■_■)
+
+Now, welcome to my website!`,
+        `(•_•)
+<)   )╯WELCOME
+ /    \ 
+
+  (•_•)
+ \(   (> TO MY
+  /    \
+
+ (•_•)
+<)   )╯WEBSITE
+ /    \`
+      ]
+      document.querySelector("pre").innerHTML = asciiArt[Math.floor(Math.random() * 3)]
+    </script>
   </body>
 </html>
