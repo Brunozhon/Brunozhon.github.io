@@ -48,7 +48,7 @@
         </li>
       </ul>
     </nav>
-    <pre>
+    <pre id="welcome">
     </pre>
     <h2 id="about-me-7213">About Me</h2>
     <p>Hi! My name is Bruno Zhong. I am 9 years old. I know four languages: HTML, CSS, JavaScript, and Swift.</p>
@@ -170,7 +170,7 @@ Now, welcome to my website!`,
 <)   )╯WEBSITE
  /    \`
       ]
-      document.querySelector("pre").innerHTML = asciiArt[Math.floor(Math.random() * 3)]
+      document.getElementById("welcome").innerHTML = asciiArt[Math.floor(Math.random() * 3)]
     </script>
   </body>
 </html>
