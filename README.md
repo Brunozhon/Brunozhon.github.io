@@ -1,5 +1,7 @@
 # Brunozhon.github.io
 
+The latest version of the website is 1.0.0.
+
 Try it: [https://brunozhon.github.io](https://brunozhon.github.io).
 
 # Changes
