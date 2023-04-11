@@ -35,7 +35,7 @@ Type a descriptive description including:
 - I deleted... and then what you deleted
 - Why you added, fixed, or deleted the stuff
 
-The the owner (which is me, Brunozhon), will "rank" the stuff.
+The owner (which is me, Brunozhon), will "rank" the stuff.
 
 - If the owner is busy, he/her/it will not merge your changes
 - If you did not type the discrptive descpiption or typed very little description, he/her/it will probaly reject because he/she/it needs more info
