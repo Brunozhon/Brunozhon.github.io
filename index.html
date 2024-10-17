@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Bruno Zhong's Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--<link href="https://unpkg.com/pattern.css" rel="stylesheet">-->
+    <meta name="author" content="Bruno Zhong">
+    <meta name="description" content="About Bruno Zhong">
+    <meta name="keywords" content="Bruno Zhong, About Bruno Zhong, Bruno, Bruno Z">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Add scrollspy */
+      html {
+        scroll-padding-top: 70px;
+      }
+      body {
+        position: relative;
+        overflow-y: scroll;
+      }
+      /* Styling for example scrollspies */
+      .scrollspy-example {
+        position: relative;
+        overflow-y: scroll;
+        height: 15em;
+      }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <nav id="navbar-example" class="navbar navbar-light bg-light px-3 sticky-top" data-bs-offset="0">
+      <h1><a class="navbar-brand" href="#">Bruno Zhong's Website</a></h1>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me-7213">About Me</a>
+          <a class="nav-link" href="https://the-bruno-store.github.io">The Bruno Store</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#the-history-of-my-website-2841">The History of My Website</a></li>
+            <li><a class="dropdown-item" href="#resources-0213">Resources</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search my website..." aria-label="Search" name="search_query">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <pre id="welcome">
+      <noscript>
+Please enable JavaScript for the fun.
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Anyways, welcome to my website.
+      </noscript>
+    </pre>
+    <h2 id="about-me-7213">About Me</h2>
+    <p>Hi! My name is Bruno Zhong. I am 11 years old. I know five programming languages: HTML, CSS, JavaScript, Swift, and Python.</p>
+    <p><img src="IMG_1142.JPG" width="500"></p>
+    <p>Some new stuff is coming soon! Keep on the lookout for it!</p>
+    <script>
+      var asciiArt = [
+        `|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| WELCOME TO MY WEBSITE! |
+|________________________|
+(\\__/) || 
+(•ㅅ•) || 
+/    づ`,
+        `Welcome to — oops, sorry…
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Now, welcome to my website!`,
+        `(•_•)
+<)   )╯WELCOME
+ /    \\ 
+  (•_•)
+ \\(   (> TO MY
+  /    \\
+ (•_•)
+<)   )╯WEBSITE
+ /    \\`
+      ]
+      document.getElementById("welcome").innerHTML = asciiArt[Math.floor(Math.random() * 3)]
+    </script>
+  </body>
+</html>

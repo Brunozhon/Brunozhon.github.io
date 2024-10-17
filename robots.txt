@@ -1,0 +1,4 @@
+# Beep boop. Boop! Boop beep? Beep!
+User-agent: GPTBot
+Disallow: /
+Sitemap: https://brunozhon.github.io/sitemap.txt
