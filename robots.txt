@@ -1,4 +1,4 @@
 # Beep boop. Boop! Boop beep? Beep!
-User-agent: GPTBot
-Disallow: /
+User-agent: *
+Allow: /
 Sitemap: https://brunozhon.github.io/sitemap.txt
