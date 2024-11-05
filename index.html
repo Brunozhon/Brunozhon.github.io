@@ -87,17 +87,18 @@
       </ul>
     </div>
     <script defer>
-      fetch("https://quotes-api-self.vercel.app/quote")
+      fetch("quotes.json")
         .then(r => r.json())
-        .then(j => {
+        .then(quotes => {
+          const q = quotes[Math.floor(Math.random() * 25)];
           document.getElementById("quote").innerHTML = `<figure>
   <blockquote class="blockquote">
-    <p>${j.quote}</p>
+    <p>${q.quote}</p>
   </blockquote>
   <figcaption class="blockquote-footer">
-    ${j.author}
+    ${q.author}
   </figcaption>
-</figure>`;
+</figure>`
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

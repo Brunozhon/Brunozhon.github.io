@@ -1,0 +1,102 @@
+[
+    {
+        "author": "Dennis Ritchie",
+        "quote": "The only way to learn a new programming language is by writing programs in it."
+    },
+    {
+        "author": "Cory House",
+        "quote": "Code is like humor. When you have to explain it, it\u2019s bad."
+    },
+    {
+        "author": "John Johnson",
+        "quote": "First, solve the problem. Then, write the code."
+    },
+    {
+        "author": "Chris Pine",
+        "quote": "Programming isn't about what you know; it's about what you can figure out."
+    },
+    {
+        "author": "Ralph Johnson",
+        "quote": "Before software can be reusable it first has to be usable."
+    },
+    {
+        "author": "Thomas Fuchs",
+        "quote": "The best error message is the one that never shows up."
+    },
+    {
+        "author": "Anon",
+        "quote": "If you can't deploy it, it doesn\u2019t work."
+    },
+    {
+        "author": "Austin Freeman",
+        "quote": "Simplicity is the soul of efficiency."
+    },
+    {
+        "author": "Coco Chanel",
+        "quote": "In order to be irreplaceable, one must always be different."
+    },
+    {
+        "author": "Anon",
+        "quote": "It\u2019s not a bug \u2013 it\u2019s an undocumented feature."
+    },
+    {
+        "author": "Grady Booch",
+        "quote": "The function of good software is to make the complex appear to be simple."
+    },
+    {
+        "author": "Steve McConnell",
+        "quote": "Good code is its own best documentation."
+    },
+    {
+        "author": "Anon",
+        "quote": "Programming is not easy like Sunday morning, it\u2019s silent poetry."
+    },
+    {
+        "author": "Kent Beck",
+        "quote": "Make it work, make it right, make it fast."
+    },
+    {
+        "author": "Brian Foote and Joseph Yoder",
+        "quote": "If you think good architecture is expensive, try bad architecture."
+    },
+    {
+        "author": "Linus Torvalds",
+        "quote": "Talk is cheap. Show me the code."
+    },
+    {
+        "author": "Terry Baker",
+        "quote": "A program is never less than 90% complete, and never more than 95% complete."
+    },
+    {
+        "author": "Paul Graham",
+        "quote": "In programming, the hard part isn\u2019t solving problems, but deciding what problems to solve."
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "Experience is the name everyone gives to their mistakes."
+    },
+    {
+        "author": "Ron Jeffries",
+        "quote": "Code never lies, comments sometimes do."
+    },
+    {
+        "author": "Ellen Ullman",
+        "quote": "Programming is the art of algorithm design and the craft of debugging errant code."
+    },
+    {
+        "author": "Doug Linder",
+        "quote": "A good programmer is someone who always looks both ways before crossing a one-way street."
+    },
+    {
+        "author": "Martin Fowler",
+        "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+    },
+    {
+        "author": "C.A.R. Hoare",
+        "quote": "The most important property of a program is whether it accomplishes the intention of its user."
+    },
+    {
+        "author": "Chris Heilmann",
+        "quote": "Java is to JavaScript as car is to carpet."
+    }
+]
