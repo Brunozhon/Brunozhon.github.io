@@ -25,7 +25,6 @@
     </nav>
 
     <div id="quote"></div>
-    <p>Quote provided by <a href="https://zenquotes.io/">ZenQuotes.io</a>.</p>
 
     <div id="about-me">
       <h2>About Me</h2>
@@ -87,11 +86,19 @@
         <li><a href="https://jquery.com/">jQuery</a> (never used it before, but should be good)</li>
       </ul>
     </div>
-
     <script defer>
-      fetch("https://zenquotes.io/api/random")
+      fetch("https://quotes-api-self.vercel.app/quote")
         .then(r => r.json())
-        .then(j => document.getElementById("quote").innerHTML = r[0].h);
+        .then(j => {
+          document.getElementById("quote").innerHTML = `<figure>
+  <blockquote class="blockquote">
+    <p>${j.quote}</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    ${j.author}
+  </figcaption>
+</figure>`;
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
