@@ -24,15 +24,8 @@
       </ul>
     </nav>
 
-    <pre id="welcome">
-      <noscript>
-Please enable JavaScript.
-(•_•)
-( •_•)>⌐■-■
-(⌐■_■)
-Anyways, welcome to my website.
-      </noscript>
-    </pre>
+    <div id="quote"></div>
+    <p>Quote provided by <a href="https://zenquotes.io/">ZenQuotes.io</a>.</p>
 
     <div id="about-me">
       <h2>About Me</h2>
@@ -95,30 +88,10 @@ Anyways, welcome to my website.
       </ul>
     </div>
 
-    <script>
-      var asciiArt = [
-        `|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
-| WELCOME TO MY WEBSITE! |
-|________________________|
-(\\__/) || 
-(•ㅅ•) || 
-/    づ`,
-        `Welcome to — oops, sorry…
-(•_•)
-( •_•)>⌐■-■
-(⌐■_■)
-Now, welcome to my website!`,
-        `(•_•)
-<)   )╯WELCOME
- /    \\ 
-  (•_•)
- \\(   (> TO MY
-  /    \\
- (•_•)
-<)   )╯WEBSITE
- /    \\`
-      ]
-      document.getElementById("welcome").innerHTML = asciiArt[Math.floor(Math.random() * 3)]
+    <script defer>
+      fetch("https://zenquotes.io/api/random")
+        .then(r => r.json())
+        .then(j => document.getElementById("quote").innerHTML = r[0].h);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
