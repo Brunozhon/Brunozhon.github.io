@@ -24,7 +24,11 @@
       </ul>
     </nav>
 
-    <div id="quote"></div>
+    <div id="quote">
+      <h2>Challange #1</h2>
+      <img width="250" src="img/challange.png">
+      <p>Explain how this snippet of Python code prints <code>hi bye</code> instead of <code>bye bye</code>. Here's <a href="https://www.programiz.com/python-programming/online-compiler/">a Python interpreter</a> just in case you aren't sure.</p>
+    </div>
 
     <div id="about-me">
       <h2>About Me</h2>
@@ -120,7 +124,7 @@
     <script defer>
       fetch("quotes.json")
         .then(r => r.json())
-        .then(quotes => {
+        /*.then(quotes => {
           const q = quotes[Math.floor(Math.random() * 25)];
           document.getElementById("quote").innerHTML = `<figure>
   <blockquote class="blockquote">
@@ -130,7 +134,7 @@
     ${q.author}
   </figcaption>
 </figure>`
-        });
+        });*/
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
