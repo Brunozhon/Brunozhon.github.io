@@ -33,19 +33,19 @@ styleSheet.innerHTML = `
         opacity: 1;
     }
     25% {
-        transform: translateY(100vh);
+        transform: translateY(calc(${document.body.scrollHeight * 1/4}px));
         opacity: 1;
     }
     50% {
-        transform: translateY(200vh);
+        transform: translateY(calc(${document.body.scrollHeight * 1/2}px));
         opacity: 1;
     }
     75% {
-        transform: translateY(300vh);
+        transform: translateY(calc(${document.body.scrollHeight * 3/4}px));
         opacity: 1;
     }
     100% {
-        transform: translateY(400vh);
+        transform: translateY(calc(${document.body.scrollHeight}px));
         opacity: 0;
     }
 }`;
