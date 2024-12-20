@@ -49,6 +49,7 @@
       var msnry =  new Masonry(document.getElementById("projects-container"), {
         columnWidth: 300,
         gutter: 10,
+        horizontalOrder: true,
         itemSelector: '.grid-item'
       });
       fetch("quotes.json")
