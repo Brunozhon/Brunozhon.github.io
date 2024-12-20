@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div id="resources">
+    <div id="resources" width="100%">
       <h2>Resources</h2>
       <p>Want to learn programming? Check out these resources:</p>
       <ul>
@@ -89,12 +89,14 @@
   <source src="${p.video}">
 </video>`
             }
-            const layout = `<div class="grid-item">
-  <h3>${p.name}</h3>
-  ${display}
-  <p>
-    <a class="btn btn-success" href="${p.link}">Find out more!</a>
-  </p>
+            const layout = `<div class="grid-item card p-2">
+  <div class="card-body">
+    <h5>${p.name}</h5>
+    ${display}
+    <p>
+      <a class="btn btn-success" href="${p.link}">Find out more!</a>
+    </p>
+  </div>
 </div>`
             document.getElementById('projects-container').innerHTML += layout;
             msnry.layout()
