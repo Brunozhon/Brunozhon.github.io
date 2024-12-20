@@ -1,0 +1,37 @@
+[
+    {
+        "name": "TicCraft",
+        "video": "img/ticcraft.mp4",
+        "link": "https://brunozhon.github.io/ticcraft/"
+    },
+    {
+        "name": "Drive On!",
+        "video": "img/drive-on.mp4",
+        "link": "https://codepen.io/Brunozhon/full/jENOWpO"
+    },
+    {
+        "name": "Codepen Inside Codepen",
+        "video": "img/codepen-inside-codepen.mp4",
+        "link": "https://codepen.io/Brunozhon/full/GRVwKWV"
+    },
+    {
+        "name": "Flappy Square",
+        "video": "img/flappy-square.mp4",
+        "link": "https://codepen.io/Brunozhon/full/RwXBmZa"
+    },
+    {
+        "name": "World of Fish",
+        "video": "img/world-of-fish.mp4",
+        "link": "https://codepen.io/Brunozhon/full/WNVKmgB"
+    },
+    {
+        "name": "Bomb Dodgers",
+        "image": "img/bomb-dodgers.png",
+        "link": "https://brunozhon.github.io/bombDodgers/"
+    },
+    {
+        "name": "Web Pong",
+        "image": "img/pong.png",
+        "link": "https://brunozhon.github.io/webPong/"
+    }
+]

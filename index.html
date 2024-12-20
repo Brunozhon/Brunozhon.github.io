@@ -8,6 +8,7 @@
     <meta name="keywords" content="Bruno Zhong, About Bruno Zhong, Bruno, Bruno Z">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/christmas.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <nav id="navbar-example" class="navbar navbar-light bg-light px-3 sticky-top" data-bs-offset="0">
@@ -25,10 +26,7 @@
       </ul>
     </nav>
 
-    <div id="quote">
-      <h2>Merry JavaScriptmas!</h2>
-      <p>I just completed day four of Scrimba's JavaScriptmas challenge! <a href="https://scrimba.com/day-4-christmas-movie-emoji-quiz--s06j6h9">The solution is over here.</a> Anyone else doing the advent calendar?</p>
-    </div>
+    <div id="quote"></div>
 
     <div id="about-me">
       <h2>About Me</h2>
@@ -38,76 +36,9 @@
 
     <div id="my-projects">
       <h2>My Projects</h2>
+      <div id="projects-container">
 
-      <h3>Web Pong</h3>
-      <p><img src="img/pong.png" width="500"></p>
-      <p>A version of Pong with a hack panel.</p>
-      <p><a target="_blank" href="https://brunozhon.github.io/webPong/">Play some pong!</a></p>
-
-      <h3>Bomb Dodgers</h3>
-      <p><img src="img/bomb-dodgers.png" width="500"></p>
-      <p>A <a href="https://phaser.io/">Phaser</a>-based game where you dodge bombs.</p>
-      <p><a target="_blank" href="https://brunozhon.github.io/bombDodgers/">Dodge some bombs!</a></p>
-      
-      <h3>World of Fish <span class="badge text-bg-primary">Updated!</span></h3>
-      <p>
-        <video autoplay muted loop width="600">
-          <source src="img/world-of-fish.mp4">
-          This content is not available in your country.
-        </video>
-      </p>
-      <p>A fish simulation where predators try to eat fish. Has better animations and is higher up in sea level compared to <a href="https://codepen.io/Jotaro-Kujo-the-lessful/pen/wvVogLe">World War Fish</a>. It also contains realistic predators, a pause button, and fish stats!</p>
-      <p><a target="_blank" href="https://codepen.io/Brunozhon/full/WNVKmgB">Look at some fish!</a></p>
-
-      <h3>Flappy Square</h3>
-      <p>
-        <video autoplay muted loop width="500">
-          <source src="img/flappy-square.mp4">
-          This content is not available in your country.
-        </video>
-      </p>
-      <p>A game where you avoid as many obstacles as possible!</p>
-      <p><a href="https://codepen.io/Brunozhon/full/RwXBmZa" target="_blank">Flap the square!</a></p>
-
-      <h3>Quiz Show</h3>
-      <p>
-        <video autoplay muted loop width="500">
-          <source src="img/quiz-show.mp4">
-          This content is not available in your country.
-        </video>
-      </p>
-      <p>How much do you know about programming? Find out in this quiz show!</p>
-      <p><a href="https://codepen.io/Brunozhon/full/MWNqXmQ" target="_blank">Quiz me now!</a></p>
-
-      <h3>CodePen Inside CodePen</h3>
-      <p>
-        <video autoplay muted loop width="500">
-          <source src="img/codepen-inside-codepen.mp4">
-          This content is not available in your country.
-        </video>
-      </p>
-      <p>CodePen inside CodePen? Just like Minecraft inside Minecraft, you are constrained to what the application you're building on provides you, but with CodePen, instead of redstone, you use HTML, CSS, and JavaScript.</p>
-      <p><a href="https://codepen.io/Brunozhon/full/GRVwKWV" target="_blank">See it now!</a></p>
-
-      <h3>Drive On!</h3>
-      <p>
-        <video autoplay muted loop width="500">
-          <source src="img/drive-on.mp4">
-          This content is not available in your country.
-        </video>
-      </p>
-      <p>A game where you try to avoid the muddy edges of the road by using the WASD keys to stay on the road. If you go in the mud, you get stuck and can't get out!</p>
-      <p><a href="https://codepen.io/Brunozhon/full/jENOWpO" target="_blank">Drive through the mud!</a></p>
-
-      <h3>TicCraft</h3>
-      <p>
-        <video autoplay muted loop width="500">
-          <source src="img/ticcraft.mp4">
-          This content is not available in your country.
-        </video>
-      </p>
-      <p><i>Minecraft</i>, but on the <a href="https://tic80.com/">TIC-80</a>. Includes a multitude of blocks, as well as some suprises!</p>
-      <p><a href="https://brunozhon.github.io/ticcraft/" target="_blank">Build something now</a> or <a href="https://github.com/Brunozhon/ticcraft">read the instructions!</a></p>
+      </div>
     </div>
 
     <div id="resources">
@@ -122,9 +53,10 @@
       </ul>
     </div>
     <script defer>
+      var msnry;
       fetch("quotes.json")
         .then(r => r.json())
-        /*.then(quotes => {
+        .then(quotes => {
           const q = quotes[Math.floor(Math.random() * 25)];
           document.getElementById("quote").innerHTML = `<figure>
   <blockquote class="blockquote">
@@ -134,7 +66,32 @@
     ${q.author}
   </figcaption>
 </figure>`
-        });*/
+      });
+      fetch("projects.json")
+        .then(r => r.json())
+        .then(projects => {
+          projects.forEach(p => {
+            let display;
+            if (p.image) {
+              display = `<img src="${p.image}">`
+            } else {
+              display = `<video autoplay muted loop width="100%">
+  <source src="${p.video}">
+</video>`
+            }
+            const layout = `<div class="grid-item">
+  <h3>${p.name}</h3>
+  ${display}
+  <p>
+    <a class="btn btn-success" href=:"${p.link}">Find out more!</a>
+  </p>
+</div>`
+            msrny = new Masonry({
+              columnWidth: 200,
+              itemSelector: '.grid-item'
+            })
+          })
+        })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="scripts/christmas.js"></script>
