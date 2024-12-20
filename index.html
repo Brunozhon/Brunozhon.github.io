@@ -53,7 +53,10 @@
       </ul>
     </div>
     <script defer>
-      var msnry;
+      var msnry =  new Masonry({
+        columnWidth: 200,
+        itemSelector: '.grid-item'
+      });
       fetch("quotes.json")
         .then(r => r.json())
         .then(quotes => {
@@ -86,10 +89,7 @@
     <a class="btn btn-success" href=:"${p.link}">Find out more!</a>
   </p>
 </div>`
-            msrny = new Masonry({
-              columnWidth: 200,
-              itemSelector: '.grid-item'
-            })
+            msrny.layout()
           })
         })
     </script>
