@@ -12,7 +12,7 @@
     <style>
       .grid-item {
         float: left;
-        width: 200px;
+        width: 300px;
       }
     </style>
   </head>
@@ -60,7 +60,8 @@
     </div>
     <script defer>
       var msnry =  new Masonry(document.getElementById("projects-container"), {
-        columnWidth: 200,
+        columnWidth: 300,
+        gutter: 10,
         itemSelector: '.grid-item'
       });
       fetch("quotes.json")
@@ -82,7 +83,7 @@
           projects.forEach(p => {
             let display;
             if (p.image) {
-              display = `<img src="${p.image}">`
+              display = `<img src="${p.image}" width="100%">`
             } else {
               display = `<video autoplay muted loop width="100%">
   <source src="${p.video}">
