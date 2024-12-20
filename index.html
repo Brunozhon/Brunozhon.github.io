@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <style>
       .grid-item {
+        float: left;
         width: 300px;
       }
     </style>
@@ -47,7 +48,9 @@
     <script defer>
       var msnry =  new Masonry(document.getElementById("projects-container"), {
         columnWidth: 300,
+        initLayout: false,
         gutter: 10,
+        stagger: 50,
         horizontalOrder: true,
         itemSelector: '.grid-item'
       });
@@ -86,8 +89,8 @@
   </div>
 </div>`
             document.getElementById('projects-container').innerHTML += layout;
-            msnry.layout()
           })
+          msnry.layout()
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
