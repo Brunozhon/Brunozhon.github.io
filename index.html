@@ -107,10 +107,11 @@
 </div>`
             document.getElementById('projects-container').innerHTML += layout;
           })
-          packery.layout()
+          console.log(packery.layout())
           packery.getItemElements().forEach(function(e) {
             var draggie = new Draggabilly(e)
             packery.bindDraggabillyEvents(draggie)
+            console.log("yay")
           })
         })
     </script>
