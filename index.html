@@ -14,6 +14,23 @@
         float: left;
         width: 300px;
       }
+
+      .grid-item:hover {
+        border-color: #888888;
+        cursor: move;
+      }
+
+      .grid-item.is-dragging,
+      .grid-item.is-positioning-post-drag {
+        z-index: 2;
+      }
+
+      .packery-drop-placeholder {
+        outline: 3px dashed #444444;
+        outline-offset: -6px;
+        -webkit-transition: -webkit-transform 0.2s;
+                transition: transform 0.2s;
+      }
     </style>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
@@ -51,8 +68,6 @@
         columnWidth: 300,
         initLayout: false,
         gutter: 10,
-        stagger: 50,
-        horizontalOrder: true,
         itemSelector: '.grid-item'
       });
       fetch("quotes.json")
@@ -94,8 +109,7 @@
           packery.layout()
           Array.prototype.forEach.call(document.getElementsByClassName('grid-item'), function(e) {
             var draggie = new Draggabilly(e)
-            packery.bindDraggabillyEvents(draggie)
-            packery.layout()
+            packery.bindDraggabillyEvents(draggie
           })
         })
     </script>
