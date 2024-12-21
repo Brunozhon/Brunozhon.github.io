@@ -67,7 +67,6 @@
     <script defer>
       var packery =  new Packery('#projects-container', {
         columnWidth: 300,
-        initLayout: false,
         gutter: 10,
         itemSelector: '.grid-item'
       });
@@ -105,9 +104,10 @@
     </p>
   </div>
 </div>`
-            document.getElementById('projects-container').innerHTML += layout;
+            var div = document.createElement('div')
+            div.innerHTML = htmlString.trim()
+            packery.appended(div.firstChild)
           })
-          console.log(packery.layout())
           packery.getItemElements().forEach(function(e) {
             var draggie = new Draggabilly(e)
             packery.bindDraggabillyEvents(draggie)
