@@ -104,9 +104,7 @@
     </p>
   </div>
 </div>`
-            var frag = document.createDocumentFragment()
-            frag.append(layout)
-            packery.appended(frag)
+            document.getElementById('projects-container').innerHTML += layout;
             console.log("zzz")
           })
           packery.reloadItems()
