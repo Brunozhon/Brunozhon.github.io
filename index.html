@@ -109,6 +109,7 @@
             packery.appended(frag)
             console.log("zzz")
           })
+          packery.reloadItems()
           packery.getItemElements().forEach(function(e) {
             var draggie = new Draggabilly(e)
             packery.bindDraggabillyEvents(draggie)
