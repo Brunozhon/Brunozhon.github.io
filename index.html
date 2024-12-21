@@ -64,7 +64,7 @@
       </div>
     </div>
     <script defer>
-      var packery =  new Packery(document.getElementById("projects-container"), {
+      var packery =  new Packery('#projects-container', {
         columnWidth: 300,
         initLayout: false,
         gutter: 10,
@@ -106,11 +106,11 @@
 </div>`
             document.getElementById('projects-container').innerHTML += layout;
           })
-          packery.layout()
-          Array.prototype.forEach.call(document.getElementsByClassName('grid-item'), function(e) {
+          packery.getItemElements().forEach(function(e) {
             var draggie = new Draggabilly(e)
-                packery.bindDraggabillyEvents(draggie)
+            packery.bindDraggabillyEvents(draggie)
           })
+          packery.layout()
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
