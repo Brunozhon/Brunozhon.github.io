@@ -55,7 +55,7 @@
         horizontalOrder: true,
         itemSelector: '.grid-item'
       });
-      var draggie = new Dragabilly(document.getElementById("projects-container"))
+      var draggie = new Draggabilly(document.getElementById("projects-container"))
       fetch("quotes.json")
         .then(r => r.json())
         .then(quotes => {
