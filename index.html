@@ -92,7 +92,7 @@
             document.getElementById('projects-container').innerHTML += layout;
           })
           packery.layout()
-          document.getElementsByClassName('grid-item').forEach(e => {
+          Array.prototype.forEach.call(document.getElementsByClassName('grid-item'), function(e) {
             var draggie = new Draggabilly(e)
             packery.bindDragabillyEvents(draggie)
             packery.layout()
