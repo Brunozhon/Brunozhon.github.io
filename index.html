@@ -47,7 +47,7 @@
       </div>
     </div>
     <script defer>
-      var packery =  new Packery(".grid-item", {
+      var packery =  new Packery(document.getElementById("projects-container"), {
         columnWidth: 300,
         initLayout: false,
         gutter: 10,
@@ -55,7 +55,9 @@
         horizontalOrder: true,
         itemSelector: '.grid-item'
       });
-      var draggie = new Draggabilly(document.getElementById("projects-container"))
+      var draggie = new Draggabilly(".grid-item", {
+        containment: true
+      })
       fetch("quotes.json")
         .then(r => r.json())
         .then(quotes => {
