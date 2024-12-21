@@ -7,9 +7,8 @@
     <meta name="description" content="About Bruno Zhong">
     <meta name="keywords" content="Bruno Zhong, About Bruno Zhong, Bruno, Bruno Z">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js">
-    </script>
+    <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
     <style>
       .grid-item {
         float: left;
@@ -48,7 +47,7 @@
       </div>
     </div>
     <script defer>
-      var msnry =  new Masonry(document.getElementById("projects-container"), {
+      var packery =  new Packery(document.getElementById("projects-container"), {
         columnWidth: 300,
         initLayout: false,
         gutter: 10,
@@ -56,6 +55,7 @@
         horizontalOrder: true,
         itemSelector: '.grid-item'
       });
+      var draggie = new Dragabilly(document.getElementById("projects-container"))
       fetch("quotes.json")
         .then(r => r.json())
         .then(quotes => {
@@ -75,7 +75,7 @@
           projects.forEach(p => {
             let display;
             if (p.image) {
-              display = `<img src="${p.image}" width="250px" height="150px">`
+              display = `<img src="${p.image}" width="250px" height="150px" style="display: block;">`
             } else {
               display = `<video autoplay muted loop width="250px" height="150px">
   <source src="${p.video}" class="vid">
@@ -92,7 +92,8 @@
 </div>`
             document.getElementById('projects-container').innerHTML += layout;
           })
-          msnry.layout()
+          packery.layout()
+          packery.bindDraggabillyEvents( draggie )
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
