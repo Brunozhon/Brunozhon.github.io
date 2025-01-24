@@ -15,7 +15,7 @@ Open a new [issue](https://github.com/Brunozhon/Brunozhon.github.io/issues/new).
 
 ## Forking
 
-You can fork my repository if you want to make any changes to it, but good luck trying to make me accept a pull request that changes all the links to rickrolls! (I did that to [one of my friends](https://github.com/eternalxlks) before, and let's just say he wasn't pleased.)
+You can fork my repository if you want to make any changes to it, but good luck trying to make me accept a pull request that changes all the links to rickrolls! (I did that to [one of my friends (who recently changed their username)](https://github.com/infinitexlks) before, and let's just say he wasn't pleased.)
 
 ## That's it!
 
